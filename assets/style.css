@@ -66,6 +66,14 @@ nav a {
 	text-align: center;
 }
 
+.container_under_header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-left: 2rem;
+	grid-gap: 10px;
+}
+
 .under_header {
 	justify-content: center;
 	height: 102px;
@@ -82,6 +90,7 @@ nav a {
 	height: 40px;
 	width: 127px;
 	border-radius: 7px;
+	text-align: center;
 }
 
 .under_header button {
@@ -109,18 +118,42 @@ nav a {
 
 }
 
+
+
 .under_nav_right {
 	margin: 0 60px;
-    font-family: 'Roboto';
-    justify-content: center;
-    color: white;
-    display: flex;
-    align-items: center;
-    left: 65px;
-    position: relative;
+	font-family: 'Roboto';
+	justify-content: center;
+	color: white;
+	display: flex;
+	align-items: center;
+	right: 35px;
+	position: relative;
 }
 
 .under_nav_right a {
 	font-size: 15px;
-	margin: 0 30px;
+	margin: 0 20px;
+}
+
+.under_nav_right img {
+	position: relative;
+	left: 30px;
+}
+
+
+
+.under_nav_right span {
+	border-radius: 50%;
+	font-size: 14px;
+	padding: 0 4px;
+	font-weight: bold;
+	margin: 0 40px;
+	background: #E5E5E5;
+	color:#EA5455;
+	text-align: center;
+}
+
+.section_ventes {
+
 }
