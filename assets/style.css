@@ -59,7 +59,7 @@ body {
 }
 
 .slogan {
-	font-size: 10px
+	font-size: 10px;
 }
 
 .nav a {
@@ -80,4 +80,63 @@ body {
 
 .nav.active .container {
 	padding: 10px 0;
+}
+
+
+
+.container-section{
+	height:auto;
+	width:80vw;
+	margin: auto;
+}
+
+h2{
+	color: #ea5455 ;
+	margin: 50px auto;
+}
+
+#offers a{
+	color: black;
+	text-decoration: none;
+	font-size: 10px;
+}
+
+#categories_logos,#delivery_method{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 20px;
+}
+
+.blue_square{
+	width: 168px;
+	height: 163px;
+	background: #2D4059;
+	border-radius: 25px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.blue_square img{
+	margin: auto;
+}
+
+.blue_square p{
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+color: #E5E5E5;
+margin-bottom: 40px;
+}
+
+#delivery_method p{
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+text-align: center;
+letter-spacing: -0.015em;
+color: #EA5455;
 }
