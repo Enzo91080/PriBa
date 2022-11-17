@@ -1,85 +1,170 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&display=swap');
+
+*,
+::before,
+::after {
+	margin: 0;
+	padding: O;
+	box-sizing: border-box;
+}
 
 * {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.section-title {
+  color: #EA5455;
+  margin-bottom: 60px;
 }
 
-body {
-	color: #222222;
-	font-family: 'Open Sans', sans-serif;
-	padding-bottom: 50px;
-}
-
-.header {
-	background: #1abc9c;
-	color: white;
-	font-size: 30px;
-}
-
-.container {
-	margin: 0 auto;
-	max-width: 1200px;
-}
-
-.nav {
-	background-color: #E5E5E5;
-	left: 0;
-	right: 0;
-	top: 0;
-	transition: all 0.3s ease-in-out;
-}
-
-.nav .container {
-	align-items: center;
+header {
+	height: 100px;
 	display: flex;
 	justify-content: space-between;
-	padding: 20px 0;
-	transition: all 0.3s ease-in-out;
-}
-
-.nav .options_listes {
 	align-items: center;
-	display: flex;
-	justify-content: center;
-	list-style-type: none;
+	padding: 0px 30px;
+	box-shadow: 0px 1px 10px #999;
 }
 
-.nav .options_listes span {
-	border-radius: 50%;
+.logo-container {
+	font-family: 'Roboto', sans-serif;
+	margin-left: 5px;
 	font-size: 15px;
-	width:30px;
-	height: 35px;
-	padding: 0 5px;
-	margin: 0 20px;
+	color: #2D4059;
+	display: inline-flex;
+}
+
+.logo-container img {
+	width: 50px;
+	height: 45px;
+	margin: 0px 10px;
+}
+
+nav a {
+	font-size: 15px;
+	color: rgb(0, 0, 0);
+	text-decoration: none;
+	transform: scale(1);
+	transition: 400ms ease-in-out;
+	font-family: 'Roboto', sans-serif;
+}
+
+
+.container_navigation {
+	font-family: 'Roboto', sans-serif;
+}
+
+.container_navigation h2 {
+	font-size: 21.7px;
+	word-spacing: 3px;
+	text-align: end;
+	margin-bottom: 20px;
+	font-weight: 700;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.container_navigation span {
+	border-radius: 50%;
+	font-size: 18px;
+	padding: 0 6px;
+	margin: 0 25px;
 	background: orangered;
 	color: rgb(255, 255, 255);
 	text-align: center;
+}
+
+.container_under_header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-left: 2rem;
+	grid-gap: 10px;
 }
 
 .slogan {
 	font-size: 10px;
 }
 
-.nav a {
-	color: #000000;
-	padding: 7px 15px;
-	text-decoration: none;
-	transition: all 0.3s ease-in-out;
+.under_header {
+	justify-content: center;
+	height: 102px;
+	text-align: center;
+	background: #2d4059;
+	color: white;
+	font-size: 30px;
+	display: flex;
+	align-items: center;
+	grid-gap: 0.5rem;
 }
 
-.nav.active {
-	background-color: #FFFFFF;
-	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+.under_header select {
+	height: 40px;
+	width: 127px;
+	border-radius: 7px;
+	text-align: center;
 }
 
-.nav.active a {
-	color: #000000;
+.under_header button {
+	color: white;
+	height: 40px;
+	width: 127px;
+	border-radius: 7px;
+	background-color: #EA5455;
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: bolder;
+	line-height: 18px;
+	text-align: center;
+	display: inline-block;
+	font-size: 16px;
+	cursor: pointer;
+	border: none;
 }
 
-.nav.active .container {
-	padding: 10px 0;
+.under_header input[type=search] {
+	height: 40px;
+	width: 298px;
+	border-radius: 7px;
+	border: none;
+
+}
+
+.under_nav_right {
+	margin: 0 60px;
+	font-family: 'Roboto';
+	justify-content: center;
+	color: white;
+	display: flex;
+	align-items: center;
+	right: 35px;
+	position: relative;
+}
+
+.under_nav_right a {
+	font-size: 15px;
+	margin: 0 20px;
+}
+
+.under_nav_right img {
+	position: relative;
+	left: 30px;
+}
+
+.under_nav_right span {
+	border-radius: 50%;
+	font-size: 14px;
+	padding: 0 4px;
+	font-weight: bold;
+	margin: 0 40px;
+	background: #E5E5E5;
+	color:#EA5455;
+	text-align: center;
+}
+
+.section_ventes {
+
 }
 
 .container-section{
@@ -88,9 +173,10 @@ body {
 	margin: auto;
 }
 
-h2{
+.title-section{
 	color: #ea5455 ;
 	margin: 50px auto;
+	font-family: 'Montserrat';
 }
 
 #offers a{
@@ -105,6 +191,7 @@ h2{
 	justify-content: center;
 	flex-wrap: wrap;
 	gap: 20px;
+	justify-content: center;
 }
 
 .blue_square{
@@ -140,10 +227,400 @@ letter-spacing: -0.015em;
 color: #EA5455;
 }
 
+.container {
+  max-width: 1120px;
+  width: 100%;
+  padding: 40px 0;
+ 
+}
+.slide-container {
+  margin: 0 30px;
+  overflow: hidden;
+  
 
- /* @media screen and (min-width:1400px) {
+}
+.card {
+  background: rgb(254, 252, 252);
+  border-radius: 6px;
+  background: #FCFCFC;
+/* shadow-1 */
 
-	.container-section{
-	width:80vw;
-	
-}  */
+box-shadow: 0px 0px 19px rgba(0, 0, 0, 0.1);
+border-radius: 6px;
+
+}
+
+.card .image-box {
+  height: 200px;
+  
+}
+.card .image-box img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px 8px 0 0;
+}
+.product-name {
+  display: flex;
+  column-gap: 12px;
+  padding: 15px;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.product-name span{
+  color: #1fac24;
+}
+.card .product-name img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+.product-name .name {
+  font-size: 15px;
+  font-weight: 500;
+}
+.profile-details .prix {
+  font-size: 12px;
+  font-weight: 500;
+  color: #4d4d4d;
+}
+
+.swiper-navBtn {
+  width: 42px;
+  height: 42px;
+  color:#EA5455 ;
+  border-radius: 3px;
+  margin: 0 150px;
+  
+
+}
+.swiper-navBtn::before,
+.swiper-navBtn::after {
+  font-size: 18px;
+ 
+}
+
+.swiper-pagination-bullet {
+  background-color: #000;
+}
+
+@media screen and (max-width: 768px) {
+  .swiper-navBtn {
+    display: none;
+  }
+}
+
+
+.container_settings_product {
+	display: flex;
+	margin: 50px 165px;
+}
+
+
+li {
+	list-style-type: none;
+	margin: 13px 0px;
+}
+
+
+.categorie_theme p {
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+
+
+li:active::before {
+	color: blue;
+	content: url('./image/circle-solid.svg') ;
+	font-weight: bold;
+
+}
+li::before {
+	margin: 10px;
+	content: url('./image/circle-regular.svg') ;
+}
+
+
+.settings_product {
+	display: flex;
+	width: 1035px;
+}
+.settings_product h4 {
+	font-weight: 100;
+	margin-left: 130px;
+}
+
+.settings_product .img_type {
+	margin: 0 15px;
+}
+.settings_product .img_type img {
+	margin: 10px;
+}
+
+.settings_product select {
+	height: 40px;
+	width: 127px;
+	border-radius: 7px;
+	background: #EA5455;
+	text-align: center;
+	border: none;
+	color: white;
+	margin: 0 15px;
+}
+
+.container_card_product{
+	position: absolute;
+    margin: 115px 235px;
+}
+
+.card_product {
+    width: 838px;
+    height: 233px;
+    background: #FCFCFC;
+    box-shadow: 0px 0px 19px rgb(0 0 0 / 10%);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+}
+
+.card_product img {
+	margin: 30px;
+}
+
+.card_product .details_product {
+	margin: 70px;
+    line-height: 45px;
+}
+
+.card_product .details_product p+p {
+	color: #1fac24;
+	font-weight: bold;
+	font-family: 'Roboto';
+
+}
+
+
+footer {
+	margin-top: 320px;
+}
+
+.first_footer {
+	height: 134px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #2D4059;
+}
+
+.besoins{
+    margin:10px;
+    width:35px;
+	background: #C4C4C4;
+	height:35px;
+    text-align:center;
+    border-radius:100px;
+}
+
+.first_footer .besoins img {
+	width: 22px;
+    position: relative;
+    top: 5px;
+}
+
+.first_footer .besoins_details  {
+	margin: 0px 20px;
+    color: white;
+    white-space: pre-line;
+}
+
+
+.first_footer .besoins_details p {
+	font-family: 'Montserrat';
+
+}
+
+.second_footer {
+	height: 290px;
+    background: #E5E5E5;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.second_footer p{
+	margin: 30px 0px;
+	color: #2D4059;
+	font-size: 18px;
+	font-family: 'Montserrat';
+
+}
+
+.third_footer {
+	background: #2D4059;
+	color: white;
+    height: 41px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Page Produit seul */
+
+#product_infos {
+  width: 60%;
+  height: 600px;
+  margin: 20px auto;
+}
+
+.product_image {
+  box-shadow: 1px 1px 10px 10px rgba(0, 0, 0, 0.07);
+  border-radius: 6px;
+  width: 547px;
+  height: 547px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  float: left;
+}
+
+#product_photo {
+  width: 497px;
+  height: 501px;
+}
+.h2 {
+  font-weight: bold;
+}
+
+.quantity_elements {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.product_text {
+  height: 547px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+}
+
+.product_text h2 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  margin-left: 20px;
+}
+
+.product_text h2:nth-child(2) {
+  position: relative;
+  bottom: 30px;
+}
+
+.product_text p {
+  margin-left: 20px;
+  position: relative;
+  bottom: 30px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.quantity_elements .quantity {
+  background: #fcfcfc;
+  font-size: 25px;
+}
+
+.overview {
+  width: 60%;
+  height: 100px;
+  margin: 20px auto;
+}
+
+.overview img {
+  width: 121px;
+  height: 95px;
+}
+
+/* PAGE FAQ */
+
+.question {
+	width: 60%;
+	height: 600px;
+	margin: 40px auto;
+}
+  
+  .question h2 {
+	font-family: "Montserrat";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 25px;
+	line-height: 17px;
+	letter-spacing: -0.015em;
+	color: #ea5455;
+	margin: 100px auto;
+  }
+  
+  .question table {
+	font-family: arial, sans-serif;
+	width: 100%;
+	height: 110px;
+	background: #e5e5e5;
+	border: 4px solid #2D4059;
+	border-radius: 9px 9px 9px 9px;
+  }
+
+  .question table tr {
+	height: 110px;
+  }
+
+  .question table, td:nth-child(1) {
+	border-bottom: 2px solid #2D4059;
+  }
+
+  #last {
+	border-bottom: none;
+  }
+
+
+  
+  .question table tr td h3,
+  p {
+	margin-left: 20px;
+  }
+  .question table tr td h3 {
+	font-family: "" Montserrat "";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 20px;
+	letter-spacing: -0.015em;
+  }
+  
+  .question table tr td h3:hover,
+  p:hover {
+	color: #ea5455;
+  }
+  
+  .align {
+	display: flex;
+	align-items: center;
+  }
+  
+  .align span {
+	margin-left: auto;
+	margin-right: 20px;
+	font-family: "Montserrat";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 38px;
+	line-height: 17px;
+	/* or 45% */
+  
+	letter-spacing: -0.015em;
+  
+	/* primary */
+  
+	color: #2d4059;
+  }

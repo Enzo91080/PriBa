@@ -1,143 +1,261 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Branche de Maxime</title>
-  <link rel="stylesheet" href="assets/style.css">
-
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="assets/style.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.css">
+	<link rel="stylesheet" href="assets\swiper-bundle.min.css" />
+	<title>Priba</title>
 </head>
+
 <body>
-
-<nav class="nav">
-	<div class="container">
-		<h1 class="logo">PriBa</a></h1>
-		<ul class="options_listes">
-			
-			
-			<li>
-				
-					<span>1</span>
-					Choix et commandes des articles
-				</a>
-			</li>
-			<li>
+	<header>
+		<div class="logo-container">
+			<img src="./assets/image/logo_color.svg">
+			<h1>Priba</h1>
+		</div>
+		<div class="container_navigation">
+			<h2>Tous vos besoins à petits prix dans la métropole Lilloise</h2>
+			<nav>
+				<span>1</span>
+				<a>Choix et commande des articles</a>
+				<span>2</span>
+				<a>Retrait des articles</a>
+				<span>3</span>
+				<a>Paiement des articles</a>
+			</nav>
+		</div>
+	</header>
+	<div class="under_header">
+		<div class="container_under_header">
+			<select name="categories" id="categories-select">
+				<option value="">Catégories</option>
+				<option value="goldfish">Goldfish</option>
+			</select>
+			<input type="search" placeholder="">
+			<button>Rechercher</button>
+			<div class="container_navigation_right">
+				<div class="under_nav_right">
+					<a>Catalogue</a>
+					<a>Questions fréquentes</a>
+					<a>Connexion &nbsp; <i class="fa-solid fa-angle-down"></i>
+					</a>
+					<img src="./assets/image/Vector.svg" alt="">
 					<span>2</span>
-
-					Retrait des articles
-				</a>
-			</li>
-			<li>
-					<span>3</span>
-
-					Paiement des articles
-				</a>
-			</li>
-		</ul>
+				</div>
+			</div>
+		</div>
 	</div>
-</nav>
-<div class="header">
-	<h1>Header</h1>
-</div>
-
-
-  <script  src="./script.js"></script>
-
-<main>
 
 	<section id="offers" class="container-section">
+		<h2 class="title-section"> Meilleurs ventes</h2>
 
-		<h2> Découvrez nos offres par catégories <a href="#">Voir tous</a> </h2>
 
-		<article id="categories_logos">
-			<div class="blue_square">
-				<img src="assets/image/bricolage.png" alt="multimedia">
-				<p>Bricolage</p>
+	<div class="container swiper">
+		<div class="slide-container">
+			<div class="card-wrapper swiper-wrapper">
+				<div class="card swiper-slide">
+					<div class="image-box">
+						<img src="assets/image/jeux_lego.png" alt="" />
+					</div>
+					<div class="product-name">
+						<div class="name-product">
+							<h3 class="name">marteau</h3>
+							<h4 class="prix">1€</h4>
+						</div>
+						<span>in stock</span>
+					</div>
+				</div>
+				<div class="card swiper-slide">
+					<div class="image-box">
+						<img src="assets/image/bricolage_marteau.png" alt="" />
+					</div>
+					<div class="product-name">
+						<div class="name-product">
+							<h3 class="name">marteau</h3>
+							<h4 class="prix">1€</h4>
+						</div>
+						<span>in stock</span>
+					</div>
+				</div>
+				<div class="card swiper-slide">
+					<div class="image-box">
+						<img src="assets/image/bricolage_jardinage_secateur.png" alt="" />
+					</div>
+					<div class="product-name">
+						<div class="name-product">
+							<h3 class="name">marteau</h3>
+							<h4 class="prix">1€</h4>
+						</div>
+						<span>in stock</span>
+					</div>
+				</div>
+				<div class="card swiper-slide">
+					<div class="image-box">
+						<img src="assets/image/fourniture_agenda.png" alt="" />
+					</div>
+					<div class="product-name">
+						<div class="name-product">
+							<h3 class="name">marteau</h3>
+							<h4 class="prix">1€</h4>
+						</div>
+						<span>in stock</span>
+					</div>
+				</div>
+				<div class="card swiper-slide">
+					<div class="image-box">
+						<img src="assets/image/fourniture_agenda.png" alt="" />
+					</div>
+					<div class="product-name">
+						<div class="name-product">
+							<h3 class="name">marteau</h3>
+							<h4 class="prix">1€</h4>
+						</div>
+						<span>in stock</span>
+					</div>
+				</div>
 			</div>
+		</div>
 
-			<div class="blue_square">
-				<img src="assets/image/multimedia.png" alt="multimedia">
-				<p>Multimedia</p>
-			</div>
-
-			<div class="blue_square">
-				<img src="assets/image/cuisine.png" alt="multimedia">
-				<p>Cuisine</p>
-			</div>
-
-			<div class="blue_square">
-				<img src="assets/image/bricolage.png" alt="multimedia">
-				<p>Bricolage</p>
-			</div>
-
-			<div class="blue_square">
-				<img src="assets/image/multimedia.png" alt="multimedia">
-				<p>Multimedia</p>
-			</div>
-
-			<div class="blue_square">
-				<img src="assets/image/cuisine.png" alt="multimedia">
-				<p>Cuisine</p>
-			</div>
-
-			<div class="blue_square">
-				<img src="assets/image/bricolage.png" alt="multimedia">
-				<p>Bricolage</p>
-			</div>
-
-			<div class="blue_square">
-				<img src="assets/image/multimedia.png" alt="multimedia">
-				<p>Multimedia</p>
-			</div>
-
-			<div class="blue_square">
-				<img src="assets/image/cuisine.png" alt="multimedia">
-				<p>Cuisine</p>
-			</div>
-
-			<div class="blue_square">
-				<img src="assets/image/bricolage.png" alt="multimedia">
-				<p>Bricolage</p>
-			</div>
-
-			<div class="blue_square">
-				<img src="assets/image/multimedia.png" alt="multimedia">
-				<p>Multimedia</p>
-			</div>
-
-			<div class="blue_square">
-				<img src="assets/image/cuisine.png" alt="multimedia">
-				<p>Cuisine</p>
-			</div>
-
-
-		</article>
+		<div class="swiper-pagination"></div>
+	</div>
+	<div class="swiper-button-next swiper-navBtn"></div>
+	<div class="swiper-button-prev swiper-navBtn"></div>
+	<main>
+		<section id="offers" class="container-section">
+			<h2 class="title-section"> Découvrez nos offres par catégories <a href="./products.html">Voir tous</a>
+			</h2>
+			<article id="categories_logos">
+				<div class="blue_square">
+					<img src="assets/image/bricolage.png" alt="multimedia">
+					<p>Bricolage</p>
+				</div>
+				<div class="blue_square">
+					<img src="assets/image/multimedia.png" alt="multimedia">
+					<p>Multimedia</p>
+				</div>
+				<div class="blue_square">
+					<img src="assets/image/cuisine.png" alt="multimedia">
+					<p>Cuisine</p>
+				</div>
+				<div class="blue_square">
+					<img src="assets/image/bricolage.png" alt="multimedia">
+					<p>Bricolage</p>
+				</div>
+				<div class="blue_square">
+					<img src="assets/image/multimedia.png" alt="multimedia">
+					<p>Multimedia</p>
+				</div>
+				<div class="blue_square">
+					<img src="assets/image/cuisine.png" alt="multimedia">
+					<p>Cuisine</p>
+				</div>
+				<div class="blue_square">
+					<img src="assets/image/bricolage.png" alt="multimedia">
+					<p>Bricolage</p>
+				</div>
+				<div class="blue_square">
+					<img src="assets/image/multimedia.png" alt="multimedia">
+					<p>Multimedia</p>
+				</div>
+				<div class="blue_square">
+					<img src="assets/image/cuisine.png" alt="multimedia">
+					<p>Cuisine</p>
+				</div>
+				<div class="blue_square">
+					<img src="assets/image/bricolage.png" alt="multimedia">
+					<p>Bricolage</p>
+				</div>
+				<div class="blue_square">
+					<img src="assets/image/multimedia.png" alt="multimedia">
+					<p>Multimedia</p>
+				</div>
+				<div class="blue_square">
+					<img src="assets/image/cuisine.png" alt="multimedia">
+					<p>Cuisine</p>
+				</div>
+			</article>
+		</section>
+		<section id="choice" class="container-section">
+			<h2 class="title-section"> Avoir le choix chez Prix Marché</h2>
+			<article id="delivery_method">
+				<div>
+					<img src="assets/image/Rectangle 132.png" alt="multimedia">
+					<p>Je choisis</p>
+				</div>
+				<div>
+					<img src="assets/image/Rectangle 133.png" alt="multimedia">
+					<p>Je choisis</p>
+				</div>
+				<div>
+					<img src="assets/image/Rectangle 134.png" alt="multimedia">
+					<p>Je choisis</p>
+				</div>
+			</article>
+		</section>
+	</main>
 	</section>
 
-	<section id="choice" class="container-section">
+<footer>
+	<div class="first_footer">
+		<div class="besoins">
+			<span><img src="./assets/image/option1.svg" alt=""></span>
+		</div>
+		<div class="besoins_details">
+			<h3>Articles à petit prix</h3>
+			<p>La majorité des produits sont à 1 euro
+			</p>
+		</div>
+		<div class="besoins">
+			<span><img src="./assets/image/option2.svg" alt=""></span>
+		</div>
+		<div class="besoins_details">
+			<h3>Articles à petit prix</h3>
+			<p>La majorité des produits sont à 1 euro
+			</p>
+		</div>
+		<div class="besoins">
+			<span><img src="./assets/image/option3.svg" alt=""></span>
+		</div>
+		<div class="besoins_details">
+			<h3>Articles à petit prix</h3>
+			<p>La majorité des produits sont à 1 euro
+			</p>
+		</div>
+		<div class="besoins">
+			<span><img src="./assets/image/option4.svg" alt=""></span>
+		</div>
+		<div class="besoins_details">
+			<h3>Articles à petit prix</h3>
+			<p>La majorité des produits sont à 1 euro
+			</p>
+		</div>
+		
+		
+	</div>
+	<div class="second_footer">
+		<div class="list_left">
+			<p>Accueil</p>
+			<p>Catalogue</p>
+			<p>Questions fréquentes</p>
+		</div>
+		<div class="list_right">
+			<p>Première visite</p>
+			<p>Livraison retrait</p>
+			<p>Contact</p>
+		</div>
+	</div>
+	<div class="third_footer">
+		<p>Mentions légales | Conditions générales d'utilisation et de ventes</p>
+	</div>
+  </footer>
+	
 
-		<h2> Avoir le choix chez Prix Marché</h2>
-
-		<article id="delivery_method">
-
-			<div>
-				<img src="assets/image/Rectangle 132.png" alt="multimedia">
-				<p>Je choisis</p>
-			</div>
-			<div>
-				<img src="assets/image/Rectangle 133.png" alt="multimedia">
-				<p>Je choisis</p>
-			</div>
-			<div>
-				<img src="assets/image/Rectangle 134.png" alt="multimedia">
-				<p>Je choisis</p>
-			</div>
-
-
-		</article>
-
-
-	</section>
-
-</main>
+	<script src="swiper-bundle.min.js"></script>
+	<script src="script.js"></script>
 </body>
+
 </html>
