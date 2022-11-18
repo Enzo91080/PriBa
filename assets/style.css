@@ -168,8 +168,6 @@ nav a {
 	text-align: center;
 }
 
-.section_ventes {}
-
 .container-section {
 	height: auto;
 	width: 80vw;
@@ -486,15 +484,15 @@ footer {
 
 main {
 	display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
 	margin: 180px;
 }
 
 #product_infos {
-    width: 60%;
-    height: 600px;
-    display: flex;
+	width: 60%;
+	height: 600px;
+	display: flex;
 }
 
 .product_image {
@@ -526,6 +524,7 @@ main {
 	align-items: center;
 	justify-content: center;
 }
+
 .qty-input .product-qty,
 .qty-input .qty-count {
 	background: 0 0;
@@ -538,10 +537,12 @@ main {
 	height: 2.5rem;
 	line-height: 1;
 }
+
 .qty-input .product-qty:focus,
 .qty-input .qty-count:focus {
 	outline: 0;
 }
+
 .qty-input .product-qty {
 
 	color: #EA5455;
@@ -555,12 +556,14 @@ main {
 	background-color: #FCFCFC;
 
 }
+
 .qty-input .product-qty::-webkit-inner-spin-button,
 .qty-input .product-qty::-webkit-outer-spin-button {
 	-webkit-appearance: none;
 	appearance: none;
 	margin: 0;
 }
+
 .qty-input .qty-count {
 	padding: 0;
 	cursor: pointer;
@@ -571,6 +574,7 @@ main {
 	position: relative;
 	background-color: #FCFCFC;
 }
+
 .qty-input .qty-count:after,
 .qty-input .qty-count:before {
 	content: "";
@@ -585,12 +589,15 @@ main {
 	right: 0;
 	margin: auto;
 }
+
 .qty-input .qty-count--minus {
 	border-right: 1px solid #e2e2e2;
 }
+
 .qty-input .qty-count--add {
 	border-left: 1px solid #e2e2e2;
 }
+
 .qty-input .qty-count--add:after {
 	transform: rotate(90deg);
 }
@@ -601,7 +608,7 @@ main {
 	border-radius: 7px;
 	color: white;
 	border: none;
-    background-color: #EA5455;
+	background-color: #EA5455;
 	margin: 20px;
 }
 
@@ -667,9 +674,6 @@ td:nth-child(1) {
 	border-bottom: none;
 }
 
-
-
-
 .question table tr td h3 {
 	font-family: "" Montserrat "";
 	font-style: normal;
@@ -678,8 +682,7 @@ td:nth-child(1) {
 	letter-spacing: -0.015em;
 }
 
-.question table tr td h3:hover,
-p:hover {
+.question table tr td h3:hover {
 	color: #ea5455;
 }
 
